@@ -1,0 +1,29 @@
+# Android Build Outputs & Caches
+.gradle/
+build/
+app/build/
+local.properties
+.navigation/
+captures/
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Portable JDK & Python virtual environments
+.jdk/
+.venv/
+__pycache__/
+*.pyc
+
+# Local Model Binaries & SFT Adapters (Large Files)
+*.gguf
+merged-minicpm-hf/
+minicpm-1b-aegis-adapter/
+dataset.jsonl
+
+# User IDE configs & system files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
