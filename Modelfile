@@ -3,6 +3,7 @@ FROM ./minicpm-aegis.gguf
 # Define the correct prompt template for MiniCPM-1B SFT
 TEMPLATE """{{ if .System }}{{ .System }}{{ end }}{{- range $i, $_ := .Messages }}{{- if eq .Role "user" }}<用户>{{ .Content }}<AI>{{- else if eq .Role "assistant" }}{{ .Content }}</s>{{- end }}{{- end }}"""
 
+
 # Parameter settings for deterministic tool outputs
 PARAMETER temperature 0.0
 PARAMETER stop "</s>"
